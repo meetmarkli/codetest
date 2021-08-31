@@ -42,6 +42,7 @@ function setLayout() {
         gameBoard.css("grid-template-columns", "1fr 1fr 1fr 1fr 1fr 1fr");
     }
 }
+
 function setGame() {
     setLayout()
     levelDisplay.text(level);
