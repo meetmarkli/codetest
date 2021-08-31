@@ -132,7 +132,7 @@ function overturn(node) {
 }
 
 function setTime() {
-    if (time == 0) {
+    if (time === 0) {
         alert("game over! Your score is " + showScore + ".");
         $(".flipper").css("transform", "rotateY(0deg)");
         
@@ -144,7 +144,7 @@ function setTime() {
         $("#score").text(showScore);
     } else {
 
-        if (score == 2) {
+        if (score === 2) {
             alert("congratulation！！NEXT LEVEL");
            
             arrLength = 16;
@@ -153,7 +153,7 @@ function setTime() {
             statsButton.click();
             score = 3;
 
-        } else if (score == 11) {
+        } else if (score === 11) {
             alert("congratulation！！NEXT LEVEL");
             arrLength = 36;
             level = 3;
