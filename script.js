@@ -33,6 +33,7 @@ function loadPage() {
 /     game process
 /******************************************/
 
+
 function setLayout() {
     if (level === 1) {
         gameBoard.css("grid-template-columns", "1fr 1fr");
