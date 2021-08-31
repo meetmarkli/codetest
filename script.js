@@ -32,13 +32,24 @@ function loadPage() {
 /*******************************************
 /     game process
 /******************************************/
+
+function setLayout() {
+    if (level === 1) {
+        gameBoard.css("grid-template-columns", "1fr 1fr");
+    } else if(level === 2){
+        gameBoard.css("grid-template-columns", "1fr 1fr 1fr 1fr");
+    } else if(level === 2){
+        gameBoard.css("grid-template-columns", "1fr 1fr 1fr 1fr 1fr 1fr");
+    }
+}
 function setGame() {
+    setLayout()
     levelDisplay.text(level);
     // console.log(statsButton[0].innerHTML);
     if (statsButton[0].innerHTML === "New Game") {
         //点击start后改变gameboard CSS排版
         
-        gameBoard.css("grid-template-columns", "1fr 1fr 1fr 1fr");
+        
         statsButton.text("End Game");
 
 
